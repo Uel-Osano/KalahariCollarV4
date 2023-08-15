@@ -1,13 +1,4 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Pet Location') }}
-        </h2>
-    </x-slot>
-
-
-    <div class="py-12">
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     
 <head>
@@ -30,15 +21,15 @@
   
     <script type="text/javascript">
         // Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
-let map, infoWindow;
+        // prompted by your browser. If you see the error "The Geolocation service
+        // failed.", it means you probably did not give permission for the browser to
+        // locate you.
+        let map, infoWindow;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 6,
+   function initMap() {
+       map = new google.maps.Map(document.getElementById("map"), {
+       center: { lat: -34.397, lng: 150.644 },
+       zoom: 6,
   });
   infoWindow = new google.maps.InfoWindow();
 
@@ -91,5 +82,3 @@ window.initMap = initMap;
   
 </body>
 </html>
-    </div>
-</x-app-layout>
